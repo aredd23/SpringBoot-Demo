@@ -1,12 +1,12 @@
 apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
-  name: springboot-app-11
+  name: springboot-app
 spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'springboot-app-11:latest'
+      name: 'springboot-app:latest'
   runPolicy: Serial
   source:
     git:
