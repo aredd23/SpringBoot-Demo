@@ -12,13 +12,9 @@ spec:
     git:
       ref: master
       uri: 'https://github.com/aredd23/SpringBoot-Demo.git'
-    type: Git
+    type: Docker
   strategy:
-    sourceStrategy:
-      from:
-        kind: ImageStreamTag
-        name: 'wildfly:13.0'
-        namespace: openshift
+    dockerStrategy:
     type: Source
   triggers:
     - imageChange:
